@@ -1,0 +1,43 @@
+.sections-box {
+    padding: 7rem 8rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about, .projects, .contact {
+    min-height: 87vh;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.body-title-block {
+    display: flex;
+}
+
+.body-title {
+    font-family: lb;
+    font-weight: bold;
+    color: #434342;
+    margin-right: 0.9rem;
+}
+
+.body-title-underline {
+    height: auto;
+    flex-grow: 1;
+    border-bottom: solid #a9e3e3 0.25rem;
+    margin-bottom: 0.8rem;
+}
+
+.about {
+
+}
+
+.projects {
+    
+}
+
+.contact {
+    
+}
