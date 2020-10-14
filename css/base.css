@@ -52,6 +52,10 @@ body {
     font-family: rc, sans-serif;
 }
 
+.about-quote {
+    font-family: rc, sans-serif;
+}
+
 /* Link jump height fix */
 :target::before {
     content: "";
@@ -63,4 +67,11 @@ body {
 /* Misc */
 html {
     scroll-behavior: smooth;
+}
+
+/* Background image */
+body {
+    background-image: url("../assets/images/wallpaper.jpg");
+    background-repeat: repeat;
+    background-size: 350px 350px;
 }

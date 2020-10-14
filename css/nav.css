@@ -14,10 +14,15 @@
     flex-direction: column;
 }
 
-.navbar-title {
+.navbar-title, .navbar-title-small {
     font-size: 1.6rem;
     color: #a9e3e3;
     padding-left: 1.6rem;
+}
+
+.navbar-title-small {
+    font-size: 1.8rem;
+    display: none;
 }
 
 .navbar-subtitle {
