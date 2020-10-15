@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/slideshow.css">
 </head>
 
 <body>
@@ -74,6 +75,97 @@
             <div class="body-title-block">
                 <h1 class="body-title">My projects</h1><div class="body-title-underline"></div>
             </div>
+
+            <div class="projects-container">
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        PAMM
+                    </div>
+                    <div class="projects-card-subtitle">
+                        The Plant/Asset Maintenance Manager
+                    </div>
+
+                    <div class="slideshow-container">
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">1 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_1.png" alt="PAMM screenshot #1" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">2 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_2.png" alt="PAMM screenshot #2" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">3 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_3.png" alt="PAMM screenshot #3" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">4 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_4.png" alt="PAMM screenshot #4" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">5 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_5.png" alt="PAMM screenshot #5" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">6 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_6.png" alt="PAMM screenshot #6" class="slide-img">
+                            </div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>
+
+                    <p class="projects-card-body">
+                        Here is a description of the project and whatever else I want to put here! This
+                        is a placerholder until I can be arsed to change it. I swear I'm going to fill it
+                        in real soon, honest! I'm just getting hung up on formatting and effects right
+                        now.
+                    </p>
+
+                    <a class="projects-card-link" href="https://pamm.herokuapp.com/" target="_blank">
+                        Check it out here
+                    </a>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        Pokémoveset
+                    </div>
+                    <div class="projects-card-subtitle">
+                        A Pokémon moveset creator
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        Memory Card Game
+                    </div>
+                    <div class="projects-card-subtitle">
+                        Find the matching pairs
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        EasyCrick
+                    </div>
+                    <div class="projects-card-subtitle">
+                        A cricket scorecard & stat keeping API
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="contact"><a id="contact"></a>
@@ -84,6 +176,7 @@
     </div>
     
     <script src="js/scrollTracking.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

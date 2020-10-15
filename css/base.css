@@ -33,26 +33,19 @@
     font-style: italic;
 }
 
-/* Define document base font size */
+/* Define document base font and font size */
 body {
     font-size: 1rem;
     font-family: lb, serif;
 }
 
 /* Font definition for included elements */
-.navbar-title {
-    font-family: lb, serif;
-}
-
-.navbar-subtitle {
-    font-family: rc, sans-serif;
-}
-
-.navbar-link {
-    font-family: rc, sans-serif;
-}
-
-.about-quote {
+.navbar-subtitle,
+.navbar-link,
+.about-quote,
+.projects-card-title,
+.projects-card-link
+{
     font-family: rc, sans-serif;
 }
 

@@ -9,7 +9,7 @@
     }
 
     .sections-box {
-        padding: 7rem 1.2rem 0;
+        padding: 6rem 0.6rem 0;
     }
 
     .body-title {
@@ -46,13 +46,20 @@
     }
 
     .about-body {
-        margin: 1rem;
+        margin: 1rem 0.2rem;
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
 
     .about-top-block {
-        margin-bottom: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    :target::before {
+        content: "";
+        display: block;
+        height: 6rem; /* fixed header height*/
+        margin: -6rem 0 0; /* negative fixed header height */
     }
 }
 
@@ -154,6 +161,7 @@
 @media only screen and (min-width: 1200px) {
     .sections-box {
         padding: 7rem 6rem 0;
+        max-width: 1426px;
     }
 
     .about-picture {
