@@ -44,7 +44,9 @@ body {
 .navbar-link,
 .about-quote,
 .projects-card-title,
-.projects-card-link
+.projects-card-link,
+.contact-card-title,
+.footer
 {
     font-family: rc, sans-serif;
 }
@@ -62,9 +64,14 @@ html {
     scroll-behavior: smooth;
 }
 
-.inline-link {
+.inline-link, .contact-card-text {
     text-decoration: none;
-    color: blue;
+    color: rgb(22, 98, 185);
+}
+
+.inline-link-footer {
+    text-decoration: none;
+    color: rgb(87, 134, 189);
 }
 
 /* Background image */

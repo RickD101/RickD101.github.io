@@ -63,6 +63,16 @@
     }
 }
 
+@media only screen and (max-width: 670px) {
+    .contact-card-text {
+        display: none;
+    }
+
+    .contact-card, .contact-card-highlight {
+        width: 195px;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .sections-box {
