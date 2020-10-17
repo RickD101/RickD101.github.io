@@ -19,9 +19,16 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
     <div class="navbar">
         <div class="navbar-title-container">
             <div class="navbar-title">Ricky Pleace</div>
@@ -48,7 +55,7 @@
 
                 <div class="about-quote">
                     <span class="big-quote">“</span>
-                    Hey, I'm Ricky! I'm an upcoming software engineer and qualified mechanical engineer.
+                    Hey, I'm Ricky! I'm an up & coming software engineer and qualified mechanical engineer.
                     <span class="big-quote">”</span>
                 </div>
             </div>
@@ -89,37 +96,37 @@
                         <div class="slide-pamm fade">
                             <div class="numbertext">1 / 6</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pamm/PAMM_1.png" alt="PAMM screenshot #1" class="slide-img">
+                                <img src="assets/images/pamm/PAMM_1.png" alt="PAMM - landing screen" class="slide-img" id="testimg">
                             </div>
                         </div>
                         <div class="slide-pamm fade">
                             <div class="numbertext">2 / 6</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pamm/PAMM_2.png" alt="PAMM screenshot #2" class="slide-img">
+                                <img src="assets/images/pamm/PAMM_2.png" alt="PAMM - work order management" class="slide-img">
                             </div>
                         </div>
                         <div class="slide-pamm fade">
                             <div class="numbertext">3 / 6</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pamm/PAMM_3.png" alt="PAMM screenshot #3" class="slide-img">
+                                <img src="assets/images/pamm/PAMM_3.png" alt="PAMM - work order editing" class="slide-img">
                             </div>
                         </div>
                         <div class="slide-pamm fade">
                             <div class="numbertext">4 / 6</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pamm/PAMM_4.png" alt="PAMM screenshot #4" class="slide-img">
+                                <img src="assets/images/pamm/PAMM_4.png" alt="PAMM - inventory management" class="slide-img">
                             </div>
                         </div>
                         <div class="slide-pamm fade">
                             <div class="numbertext">5 / 6</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pamm/PAMM_5.png" alt="PAMM screenshot #5" class="slide-img">
+                                <img src="assets/images/pamm/PAMM_5.png" alt="PAMM - procedure management" class="slide-img">
                             </div>
                         </div>
                         <div class="slide-pamm fade">
                             <div class="numbertext">6 / 6</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pamm/PAMM_6.png" alt="PAMM screenshot #6" class="slide-img">
+                                <img src="assets/images/pamm/PAMM_6.png" alt="PAMM - work order print/preview" class="slide-img">
                             </div>
                         </div>
                         
@@ -128,10 +135,11 @@
                     </div>
 
                     <p class="projects-card-body">
-                        Here is a description of the project and whatever else I want to put here! This
-                        is a placerholder until I can be arsed to change it. I swear I'm going to fill it
-                        in real soon, honest! I'm just getting hung up on formatting and effects right
-                        now.
+                        PAMM is a web app designed to emulate standalone maintenance  management software. It 
+                        is a modern interpretation of software that I used during my time as a 
+                        mechanical engineer. PAMM served as my capstone project for the General Assembly SEI 
+                        course. The backend utilises Node.js running an Express server with a MongoDB (noSQL) database. 
+                        The frontend was created using React and Material-UI. 
                     </p>
 
                     <a class="projects-card-link" href="https://pamm.herokuapp.com/" target="_blank">
@@ -151,19 +159,19 @@
                         <div class="slide-pokemoveset fade">
                             <div class="numbertext">1 / 3</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pokemoveset/Pokemoveset_1.png" alt="Pokèmoveset screenshot #1" class="slide-img">
+                                <img src="assets/images/pokemoveset/Pokemoveset_1.png" alt="Pokémoveset - search screen" class="slide-img">
                             </div>
                         </div>
                         <div class="slide-pokemoveset fade">
                             <div class="numbertext">2 / 3</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pokemoveset/Pokemoveset_2.png" alt="Pokèmoveset screenshot #2" class="slide-img">
+                                <img src="assets/images/pokemoveset/Pokemoveset_2.png" alt="Pokémoveset - search results screen" class="slide-img">
                             </div>
                         </div>
                         <div class="slide-pokemoveset fade">
                             <div class="numbertext">3 / 3</div>
                             <div class="img-hover-zoom">
-                                <img src="assets/images/pokemoveset/Pokemoveset_3.png" alt="Pokèmoveset screenshot #3" class="slide-img">
+                                <img src="assets/images/pokemoveset/Pokemoveset_3.png" alt="Pokémoveset - Saved movesets screen" class="slide-img">
                             </div>
                         </div>
                         
@@ -172,10 +180,12 @@
                     </div>
 
                     <p class="projects-card-body">
-                        Here is a description of the project and whatever else I want to put here! This
-                        is a placerholder until I can be arsed to change it. I swear I'm going to fill it
-                        in real soon, honest! I'm just getting hung up on formatting and effects right
-                        now.
+                        Pokémoveset is a web app that allows users to search for a Pokémon's learnable
+                        moves. Users can make a profile and log in to create and save movesets. The 
+                        backend structure is similar to that of PAMM, using Node.js, Express and MongoDB. 
+                        The frontend was built using jQuery with some Bootstrap elements. The data used 
+                        to display a Pokémon's available moves is parsed via an external API request 
+                        (<a class="inline-link" target="_blank" href="https://pokeapi.co/">PokéAPI</a>).
                     </p>
 
                     <a class="projects-card-link" href="https://pokemoveset.herokuapp.com/" target="_blank">
@@ -193,15 +203,17 @@
 
                     <div class="slideshow-container">
                         <div class="img-hover-zoom">
-                            <img src="assets/images/Memory_Game.png" alt="Memory Game screenshot" class="slide-img">
+                            <img src="assets/images/Memory_Game.png" alt="Memory Card Game screenshot" class="slide-img">
                         </div>
                     </div>
 
                     <p class="projects-card-body">
-                        Here is a description of the project and whatever else I want to put here! This
-                        is a placerholder until I can be arsed to change it. I swear I'm going to fill it
-                        in real soon, honest! I'm just getting hung up on formatting and effects right
-                        now.
+                        This memory card game was created prior to commencing the General Assembly
+                        SEI course. It is built using plain HTML, JavaScript, and CSS. The foundations of
+                        this project were formed by following tutorials provided via pre-course exercises.
+                        I took these exercises and expanded upon them to include functionality such as
+                        random card generation/ordering and the ability to select the number of cards to 
+                        play with.
                     </p>
 
                     <a class="projects-card-link" href="https://rickd101.github.io/Fundamentals_Memory_Game/" target="_blank">
@@ -226,10 +238,12 @@
                     </div>
 
                     <p class="projects-card-body">
-                        Here is a description of the project and whatever else I want to put here! This
-                        is a placerholder until I can be arsed to change it. I swear I'm going to fill it
-                        in real soon, honest! I'm just getting hung up on formatting and effects right
-                        now.
+                        EasyCrick is an API only project that was created using the Ruby on Rails
+                        framework. It allows a user to upload players, teams and full match results to
+                        a PostgresSQL database. This data can then be viewed, along with player 
+                        based statistics calculated from the data. Full documentation on how to effectively
+                        use the API is forthcoming. A full user interface may also be included in the
+                        future.
                     </p>
 
                     <a class="projects-card-link" href="https://github.com/RickD101/EasyCrick" target="_blank">
@@ -241,13 +255,14 @@
         
         <div class="contact"><a id="contact"></a>
             <div class="body-title-block">
-                <h1 class="body-title">Contact details</h1><div class="body-title-underline"></div>
+                <h1 class="body-title">Contact & more</h1><div class="body-title-underline"></div>
             </div>
         </div>
     </div>
     
     <script src="js/scrollTracking.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

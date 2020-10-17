@@ -62,6 +62,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.inline-link {
+    text-decoration: none;
+    color: blue;
+}
+
 /* Background image */
 body {
     background-image: url("../assets/images/wallpaper.jpg");
